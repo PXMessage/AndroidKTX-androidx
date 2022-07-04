@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title1"
+            style="@style/TitleStyle"/>
+
+        <com.lxj.androidktx.widget.RatioImageView
+            android:id="@+id/image1"
+            app:riv_ratio="2"
+            app:riv_limitHeight="150dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+
+        <include layout="@layout/divider"/>
+
+        <TextView
+            android:id="@+id/title2"
+            style="@style/TitleStyle"/>
+
+        <com.lxj.androidktx.widget.ShapeImageView
+            android:id="@+id/image2"
+            app:siv_round="true"
+            android:layout_width="160dp"
+            android:layout_height="160dp" />
+
+        <include layout="@layout/divider"/>
+
+        <TextView
+            android:id="@+id/title3"
+            style="@style/TitleStyle"/>
+
+        <com.lxj.androidktx.widget.RoundImageView
+            app:riv_corner_radius="0pt"
+            android:id="@+id/image3"
+            android:layout_width="190dp"
+            android:layout_height="190dp" />
+
+
+        <ImageView
+            android:id="@+id/image4"
+            android:layout_width="190dp"
+            android:layout_height="190dp" />
+
+        <ImageView
+            android:id="@+id/image5"
+            android:layout_width="190dp"
+            android:layout_height="190dp" />
+
+
+        <include layout="@layout/divider"/>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

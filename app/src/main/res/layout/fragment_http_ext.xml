@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发送请求" />
+
+    <Button
+        android:id="@+id/btnSend2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发送长请求2" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="#ddd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvHttpResult"
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tvResponse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f0f0f0"
+                android:padding="20dp"
+                android:textColor="#333"
+                android:textSize="17sp" />
+
+            <com.lxj.androidktx.widget.TitleBar
+                android:background="#BB1F1F"
+                app:title="我是标题啊"
+                app:titleColor="#fff"
+                app:leftImageSrc="@mipmap/fh2"
+                app:rightImageSrc="@mipmap/setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <com.lxj.androidktx.widget.TitleBar
+                android:layout_marginTop="15dp"
+                app:title="嘻嘻"
+                android:id="@+id/tt"
+                app:titleAlignLeft="true"
+                app:leftImageSrc="@mipmap/fh2"
+                app:rightImageSrc="@mipmap/setting"
+                app:rightImagePadding="15dp"
+                app:rightImage2Src="@mipmap/zhifuwacheng"
+                app:rightImage3Src="@mipmap/fx"
+                app:titleColor="#fff"
+                android:background="#2079E5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <com.lxj.androidktx.widget.TitleBar
+                android:background="#2FD145"
+                app:title="我是标题"
+                app:leftTextDrawable="@mipmap/fh2"
+                app:leftTextColor="#fff"
+                app:leftText="返回"
+                app:titleColor="#fff"
+                app:rightText="确定"
+                app:rightTextColor="#fff"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <com.lxj.androidktx.widget.SuperLayout
+                android:id="@+id/sl"
+                android:clickable="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginTop="15dp"
+                app:sl_leftImageSrc="@drawable/avatar"
+                app:sl_leftText="头像"
+                app:sl_leftTextColor="#222"
+                app:sl_leftTextSize="18sp"
+                app:sl_rightImageSrc="@mipmap/jt"
+                app:sll_solid="#3EDCE9"
+                app:sll_corner="15dp"
+                app:sll_strokeWidth="2dp"
+                app:sll_stroke="#f00"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <com.lxj.androidktx.widget.SuperLayout
+                android:id="@+id/slWeChat"
+                android:clickable="true"
+                app:sll_solid="#ffffff"
+                android:paddingLeft="16dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginTop="15dp"
+                app:sl_leftImageSrc="@drawable/wechat"
+                app:sl_leftText="微信支付"
+                app:sl_leftTextMarginLeft="15dp"
+                app:sl_leftTextColor="#222"
+                app:sl_leftTextSize="16sp"
+                app:sl_rightImageSrc="@drawable/checked"
+                app:sll_bottomLineColor="#ccc"
+                app:sl_rightText="更新"
+                app:sl_rightTextBgColor="#f00"
+                app:sl_rightTextWidth="50dp"
+                app:sl_rightTextHeight="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <com.lxj.androidktx.widget.SuperLayout
+                app:sll_rippleColor="#f00"
+                android:clickable="true"
+                app:sll_solid="#ffffff"
+                android:paddingLeft="16dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                app:sl_leftImageSrc="@drawable/ali"
+                app:sl_leftText="支付宝"
+                app:sl_leftTextMarginLeft="15dp"
+                app:sl_leftTextColor="#222"
+                app:sl_leftTextSize="16sp"
+                app:sl_rightImageSrc="@drawable/uncheck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.lxj.androidktx.widget.SuperLayout
+                android:layout_marginTop="15dp"
+                android:clickable="true"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                app:sll_solid="#28cc6b"
+                app:sl_leftText="个人签名"
+                app:sl_leftImageSize="60dp"
+                app:sl_leftTextMarginLeft="12dp"
+                app:sl_leftTextColor="#fff"
+                app:sl_leftTextSize="18sp"
+                app:sl_leftTextMarginBottom="5dp"
+                app:sl_leftSubText="用飘柔，就是这么自信"
+                app:sl_leftSubTextColor="#afff"
+                app:sl_leftImageSrc="@drawable/avatar"
+                app:sl_rightImageSrc="@drawable/arrow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.lxj.androidktx.widget.SuperLayout
+                app:sll_solid="#fff"
+                android:layout_marginTop="15dp"
+                android:clickable="true"
+                app:sl_leftText="总额："
+                app:sl_leftImageSize="60dp"
+                app:sl_leftTextMarginLeft="12dp"
+                app:sl_leftTextColor="#222"
+                app:sl_leftTextSize="18sp"
+                app:sl_centerText="120￥"
+                app:sl_centerTextSize="24sp"
+                app:sl_centerTextColor="#E93131"
+                app:sl_rightText="确认支付"
+                app:sl_rightTextColor="#fff"
+                app:sl_rightTextBgColor="#14ca5f"
+                app:sl_rightTextWidth="95dp"
+                app:sl_rightTextHeight="55dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.lxj.androidktx.widget.SuperLayout
+                app:sll_solid="#fff"
+                android:clickable="true"
+                android:paddingLeft="14dp"
+                android:paddingRight="15dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:layout_marginTop="15dp"
+                app:sl_leftText="软件升级"
+                app:sl_leftTextColor="#222"
+                app:sl_leftTextSize="18sp"
+                app:sl_rightText="发现新版本!"
+                app:sl_rightTextSize="12sp"
+                app:sl_rightTextColor="#fff"
+                app:sl_rightTextBg="@drawable/bg_update"
+                app:sl_rightTextHeight="35dp"
+                app:sl_rightImageSrc="@mipmap/jt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.lxj.androidktx.widget.SuperLayout
+                android:clickable="true"
+                app:sll_solid="#fff"
+                android:paddingLeft="14dp"
+                android:paddingRight="15dp"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:layout_marginTop="15dp"
+                app:sl_leftText="个性签名"
+                app:sl_leftTextColor="#222"
+                app:sl_leftTextSize="18sp"
+                app:sl_rightText="说走就走的旅行!"
+                app:sl_rightTextSize="16sp"
+                app:sl_rightTextColor="#666"
+                app:sl_rightImageSrc="@mipmap/jt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.lxj.androidktx.widget.SuperLayout
+                android:clickable="true"
+                app:sll_solid="#fff"
+                android:paddingLeft="14dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginTop="15dp"
+                app:sl_leftText="头像"
+                app:sl_leftTextColor="#222"
+                app:sl_leftTextSize="18sp"
+                app:sl_rightImageSrc="@mipmap/jt"
+                app:sl_rightImage2Src="@drawable/avatar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ShadowLayout 阴影 -->
+    <declare-styleable name="ShadowLayout">
+        <attr name="sl_shadow_color" format="color" />
+        <attr name="sl_shadow_auto_darken" format="boolean" />
+        <attr name="sl_shadow_blur" format="dimension" />
+        <attr name="sl_shadow_round" format="dimension" />
+        <attr name="sl_shadow_offset_dx" format="dimension" />
+        <attr name="sl_shadow_offset_dy" format="dimension" />
+        <attr name="sl_shadow_offset_left" format="dimension" />
+        <attr name="sl_shadow_offset_top" format="dimension" />
+        <attr name="sl_shadow_offset_right" format="dimension" />
+        <attr name="sl_shadow_offset_bottom" format="dimension" />
+    </declare-styleable>
+
+</resources>
